@@ -6,4 +6,4 @@ function doSomemath(){
 }
 
 var result = doSomemath();
-console.log(result)
+console.log(result);

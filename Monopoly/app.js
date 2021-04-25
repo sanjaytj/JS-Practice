@@ -25,16 +25,26 @@ function rolldice2(){
 }
 
 // define change position method
+var count = 0;
 function changePosition1(old,currentPos){  // old pos + curr Pos
+    count++
     var newPosition=old+currentPos;
     player1[1]= newPosition; // now player1 position gets updated
-
+    newPosition = newPosition % 11;
     console.log(player1[1]);
 
+    //changing the image position
+    
+
+
     updateMoney1(player1[1]);
+
+    //changing image position
+
 }
  
 function changePosition2(old,currentPosition){
+    count++;
     var newPosition = old + currentPosition;
     player2[1] = newPosition;
     console.log(player2[1]);
